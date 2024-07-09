@@ -26,8 +26,8 @@ export class LocationService {
     return this.httpClient.delete(this.baseUrl+"/"+id);
   }
 
-  updateLocation(id: number, location: Location): Observable<Location> {
-    return this.httpClient.put<Location>(`${this.baseUrl}/${id}`, location);
-  }
+  // updateLocation(id: number, location: Location): Observable<Location> {
+  //   return this.httpClient.put<Location>(`${this.baseUrl}/${id}`, location);
+  // }
 
 }
