@@ -22,23 +22,27 @@
     },
     {
       "id": "9",
-      "name": "Capital Safe Towns",
+      "name": "Shamima",
       "city": "Portland",
       "state": "OR",
       "photo": "https://angular.io/assets/images/tutorials/faa/webaliser-_TPTXZd9mOo-unsplash.jpg",
       "availableUnits": 6,
       "wifi": true,
       "laundry": true
-    },
+    }
+  ],
+
+  "students":[
+
     {
-      "id": "4235",
-      "name": "ddd",
-      "city": "ddd",
-      "state": "ddd",
-      "photo": "",
-      "availableUnits": 5,
-      "wifi": true,
-      "laundry": true
+      "id":1,
+      "name":"Adiba",
+      "email":"adiba@gmail.com",
+      "cellNo":"123456789",
+      "location":{
+        "id":"9"
+      }
     }
   ]
+
 }

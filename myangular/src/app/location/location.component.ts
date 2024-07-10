@@ -11,14 +11,14 @@ import { Location } from './location.model';
   templateUrl: './location.component.html',
   styleUrl: './location.component.css'
 })
-export class LocationComponent implements OnInit{
-  locations:any;
+export class LocationComponent implements OnInit {
+  locations: any;
 
   constructor(
     private locationService: LocationService,
     private router: Router,
     private httpClient: HttpClient
-  ) {}
+  ) { }
 
   ngOnInit(): void {
     this.locations = this.locationService.getAllLocations();
@@ -37,6 +37,10 @@ export class LocationComponent implements OnInit{
 
         }
       });
-    }
+  }
+
+  updateLocation(id: string) {
+    this.router.navigate(['/updatelocation', id]);
+  }
 
 }
