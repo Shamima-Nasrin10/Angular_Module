@@ -129,6 +129,16 @@
       "availableUnits": "5",
       "wifi": true,
       "laundry": true
+    },
+    {
+      "id": "455f",
+      "name": "Shamima Nasrin",
+      "city": "Dhaka",
+      "state": "Dhaka",
+      "photo": "TEST",
+      "availableUnits": "45",
+      "wifi": false,
+      "laundry": "false"
     }
   ]
 }

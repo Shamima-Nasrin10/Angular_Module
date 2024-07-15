@@ -15,9 +15,9 @@ export class LocationService {
     private httpClient:HttpClient
   ) { }
 
-  getAllLocation():Observable<Location[]>{
+  getAllLocation():Observable<any>{
 
-    return this.httpClient.get<Location[]>(this.baseUrl);
+    return this.httpClient.get<any>(this.baseUrl);
   }
 
   createLocation(location:Location):Observable<any>{
