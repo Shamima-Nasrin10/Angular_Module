@@ -1,5 +1,5 @@
 {
-  "name": "myangular",
+  "name": "fifthprojectclass",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:myangular": "node dist/myangular/server/server.mjs"
+    "serve:ssr:fifthprojectclass": "node dist/fifthprojectclass/server/server.mjs"
   },
   "private": true,
   "dependencies": {
