@@ -37,4 +37,8 @@ locations:any;
 
   }
 
+  updateLocation(id:string){
+this.router.navigate(['/updatelocation/'+id]);
+  }
+
 }

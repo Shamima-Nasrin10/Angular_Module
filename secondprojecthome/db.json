@@ -1,16 +1,6 @@
 {
   "locations": [
     {
-      "id": "0",
-      "name": "Acme Fresh Start Housing",
-      "city": "Chicago",
-      "state": "IL",
-      "photo": "https://angular.io/assets/images/tutorials/faa/bernard-hermant-CLKGGwIBTaY-unsplash.jpg",
-      "availableUnits": 4,
-      "wifi": true,
-      "laundry": true
-    },
-    {
       "id": "1",
       "name": "A113 Transitional Housing",
       "city": "Santa Monica",
@@ -72,73 +62,24 @@
     },
     {
       "id": "7",
-      "name": "Hopeful Housing Solutions",
-      "city": "Oakland",
-      "state": "CA",
+      "name": "Sandwip",
+      "city": "Chattogram",
+      "state": "CTG",
       "photo": "https://angular.io/assets/images/tutorials/faa/r-architecture-GGupkreKwxA-unsplash.jpg",
       "availableUnits": 2,
       "wifi": true,
-      "laundry": true
-    },
-    {
-      "id": "8",
-      "name": "Seriously Safe Towns",
-      "city": "Oakland",
-      "state": "CA",
-      "photo": "https://angular.io/assets/images/tutorials/faa/saru-robert-9rP3mxf8qWI-unsplash.jpg",
-      "availableUnits": 10,
-      "wifi": false,
       "laundry": false
-    },
+    }
+  ],
+  "students": [
     {
-      "id": "9",
-      "name": "Capital Safe Towns",
-      "city": "Portland",
-      "state": "OR",
-      "photo": "https://angular.io/assets/images/tutorials/faa/webaliser-_TPTXZd9mOo-unsplash.jpg",
-      "availableUnits": 6,
-      "wifi": true,
-      "laundry": true
-    },
-    {
-      "id": "bdfc",
-      "name": "hhh",
-      "city": "hhh",
-      "state": "kkk",
-      "photo": "dd",
-      "availableUnits": "5",
-      "wifi": true,
-      "laundry": ""
-    },
-    {
-      "id": "caad",
-      "name": null,
-      "city": null,
-      "state": null,
-      "photo": null,
-      "availableUnits": null,
-      "wifi": null,
-      "laundry": null
-    },
-    {
-      "id": "200e",
-      "name": "Shamima",
-      "city": "Dhaka",
-      "state": "dhaka",
-      "photo": "dhk",
-      "availableUnits": "5",
-      "wifi": true,
-      "laundry": true
-    },
-    {
-      "id": "455f",
-      "name": "Shamima Nasrin",
-      "city": "Dhaka",
-      "state": "Dhaka",
-      "photo": "TEST",
-      "availableUnits": "45",
-      "wifi": false,
-      "laundry": "false"
+      "id": 1,
+      "name": "Raiyan",
+      "email": "raiyan@gmail.com",
+      "cellNo": "123456789",
+      "location": {
+        "id": "7"
+      }
     }
   ]
 }

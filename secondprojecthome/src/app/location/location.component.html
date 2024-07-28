@@ -27,8 +27,8 @@
                     "yes":"No"}}</td>
                     
                 <td>
-                    <button class="btn btn-info m-1">Edit</button>
-                    <button class="btn btn-danger m-1">Delete</button>
+                    <button class="btn btn-info m-1" (click)="updateLocation(location.id)">Edit</button>
+                    <button class="btn btn-danger m-1" (click)="deleteLocation(location.id)">Delete</button>
                 </td>
 
             </tr>
