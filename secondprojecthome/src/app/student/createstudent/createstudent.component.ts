@@ -3,8 +3,8 @@ import { StudentserviceService } from '../studentservice.service';
 import { LocationService } from '../../location/location.service';
 import { Location } from '../../location/location.model';
 import { StudentModel } from '../student.model';
-import { error } from 'console';
-import { Observable } from 'rxjs';
+// import { error } from 'console';
+// import { Observable } from 'rxjs';
 import { Router } from '@angular/router';
 import { FormBuilder, FormGroup } from '@angular/forms';
 
@@ -88,7 +88,7 @@ export class CreatestudentComponent implements OnInit {
         next: res => {
           this.loadLocation();
           this.studentForm.reset();
-          this.router.navigate(['student']);
+          this.router.navigate(['viewstudent']);
 
         },
 

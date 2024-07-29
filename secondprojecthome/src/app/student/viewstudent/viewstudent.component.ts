@@ -1,6 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { StudentserviceService } from '../studentservice.service';
 import { LocationService } from '../../location/location.service';
+import { StudentModel } from '../student.model';
+import { Location } from '../../location/location.model';
+import { Router } from '@angular/router';
+import { forkJoin } from 'rxjs';
+import { error } from 'console';
 
 @Component({
   selector: 'app-viewstudent',
@@ -8,18 +13,37 @@ import { LocationService } from '../../location/location.service';
   styleUrl: './viewstudent.component.css'
 })
 export class ViewstudentComponent implements OnInit{
-  students:any;
-  locations:any;
+  students: StudentModel[]=[];
+  locations: Location[]=[];
   constructor(
 
     private studentService: StudentserviceService,
     private locationService:LocationService,
+    private router:Router
 
   ){}
   
   ngOnInit(): void {
-    this.locations=this.locationService.getAllLocationForStudent();
-    this.students=this.studentService.viewAllStudent();
+    this.loadData();
+    // this.locations=this.locationService.getAllLocationForStudent();
+    // this.students=this.studentService.viewAllStudent();
+  }
+
+  loadData(): void{
+
+forkJoin({
+  locations: this.locationService.getAllLocationForStudent(),
+students: this.studentService.viewAllStudent()
+}).subscribe({
+  next: ({locations, students})=>{
+    this.locations=locations;
+    this.students=students;
+  },
+  error:error=>{
+    console.log(error);
+  }
+});
+
   }
 
 }

@@ -126,6 +126,22 @@
         "wifi": true,
         "laundry": false
       }
+    },
+    {
+      "id": "a9d9",
+      "name": "Razia",
+      "email": "razia@gmail.com",
+      "cellNo": "123987654",
+      "location": {
+        "id": "7",
+        "name": "Sandwip",
+        "city": "Chattogram",
+        "state": "CTG",
+        "photo": "https://angular.io/assets/images/tutorials/faa/r-architecture-GGupkreKwxA-unsplash.jpg",
+        "availableUnits": 2,
+        "wifi": true,
+        "laundry": false
+      }
     }
   ]
 }
