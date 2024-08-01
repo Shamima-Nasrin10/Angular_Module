@@ -1,4 +1,11 @@
 {
+
+  "user":[{
+    "id":1,
+    "name":"Muslima Begum",
+    "email":"muslima@gmail.com",
+    "password":"1234"
+  }],
   "locations": [
     {
       "id": "3",
@@ -35,7 +42,7 @@
       "name": "Syedpur",
       "city": "Nilphamari",
       "state": "RGP",
-      "photo": "https://angular.io/assets/images/tutorials/faa/r-architecture-GGupkreKwxA-unsplash.jpg",
+      "photo": "https://www.pexels.com/photo/close-photography-of-red-and-pink-rose-56866/",
       "availableUnits": 2,
       "wifi": true,
       "laundry": false
