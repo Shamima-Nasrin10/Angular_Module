@@ -6,13 +6,15 @@ import { CreatelocationComponent } from './location/createlocation/createlocatio
 import { UpdatelocationComponent } from './location/updatelocation/updatelocation.component';
 import { ViewstudentComponent } from './student/viewstudent/viewstudent.component';
 import { CreatestudentComponent } from './student/createstudent/createstudent.component';
+import { UpdatestudentComponent } from './student/updatestudent/updatestudent.component';
 
 const routes: Routes = [
   {path:"location", component:LocationComponent},
   {path:"createlocation", component:CreatelocationComponent},
   {path:"updatelocation/:id", component:UpdatelocationComponent},
-  {path:"viewstudent", component:ViewstudentComponent},
-  {path:"createstudent", component:CreatestudentComponent}
+  {path:"student", component:ViewstudentComponent},
+  {path:"createstudent", component:CreatestudentComponent},
+  {path:"updatestudent/:id", component:UpdatestudentComponent}
 ];
 
 @NgModule({

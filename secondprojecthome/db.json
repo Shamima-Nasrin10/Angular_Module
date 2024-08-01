@@ -53,15 +53,15 @@
   ],
   "students": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Raiyan",
       "email": "raiyan@gmail.com",
       "cellNo": "123456789",
       "location": {
-        "id": "7",
-        "name": "Sandwip",
-        "city": "Chattogram",
-        "state": "CTG",
+        "id": "6",
+        "name": "Syedpur",
+        "city": "Nilphamari",
+        "state": "RGP",
         "photo": "https://angular.io/assets/images/tutorials/faa/r-architecture-GGupkreKwxA-unsplash.jpg",
         "availableUnits": 2,
         "wifi": true,
@@ -69,7 +69,7 @@
       }
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Ayman",
       "email": "ayman@gmail.com",
       "cellNo": "123456789",
@@ -85,44 +85,17 @@
       }
     },
     {
-      "id": "9185",
-      "location": {
-        "id": "7"
-      },
-      "name": "Muslima",
-      "email": "muslima@gmail.com",
-      "cellNo": "123456789"
-    },
-    {
-      "id": "ac52",
-      "location": {
-        "id": "7"
-      },
-      "name": "Muslima",
-      "email": "muslima@gmail.com",
-      "cellNo": "123456789"
-    },
-    {
-      "id": "24ae",
-      "location": {
-        "id": "7"
-      },
-      "name": "Muslima",
-      "email": "muslima@gmail.com",
-      "cellNo": "123456789"
-    },
-    {
       "id": "fa77",
       "name": "Shafiq",
       "email": "shafiq@gmail.com",
       "cellNo": "123456789",
       "location": {
-        "id": "3",
-        "name": "Homesteady Housing",
-        "city": "Chicago",
-        "state": "IL",
-        "photo": "https://angular.io/assets/images/tutorials/faa/ian-macdonald-W8z6aiwfi1E-unsplash.jpg",
-        "availableUnits": 1,
+        "id": "7",
+        "name": "Sandwip",
+        "city": "Chattogram",
+        "state": "CTG",
+        "photo": "https://angular.io/assets/images/tutorials/faa/r-architecture-GGupkreKwxA-unsplash.jpg",
+        "availableUnits": 2,
         "wifi": true,
         "laundry": false
       }
@@ -133,12 +106,12 @@
       "email": "razia@gmail.com",
       "cellNo": "123987654",
       "location": {
-        "id": "7",
-        "name": "Sandwip",
-        "city": "Chattogram",
-        "state": "CTG",
-        "photo": "https://angular.io/assets/images/tutorials/faa/r-architecture-GGupkreKwxA-unsplash.jpg",
-        "availableUnits": 2,
+        "id": "4",
+        "name": "Happy Homes Group",
+        "city": "Gary",
+        "state": "IN",
+        "photo": "https://angular.io/assets/images/tutorials/faa/krzysztof-hepner-978RAXoXnH4-unsplash.jpg",
+        "availableUnits": 1,
         "wifi": true,
         "laundry": false
       }

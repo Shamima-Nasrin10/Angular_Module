@@ -8,32 +8,32 @@ import { Location } from './location.model';
 })
 export class LocationService {
 
-  baseUrl:string="http://localhost:3000/locations";
+  baseUrl: string = "http://localhost:3000/locations";
 
 
   constructor(
-    private httpClient:HttpClient
+    private httpClient: HttpClient
   ) { }
 
-  getAllLocation():Observable<any>{
+  getAllLocation(): Observable<any> {
 
     return this.httpClient.get<any>(this.baseUrl);
   }
 
-  getAllLocationForStudent():Observable<Location[]>{
-return this.httpClient.get<Location[]>(this.baseUrl)
-.pipe(
-  catchError(this.handleError)
-)
+  getAllLocationForStudent(): Observable<Location[]> {
+    return this.httpClient.get<Location[]>(this.baseUrl)
+      .pipe(
+        catchError(this.handleError)
+      )
 
   }
 
-  private handleError(error:Observable<any>){
-    console.error('An error occured:',error);
-    return throwError(()=> new Error('test'));
+  private handleError(error: Observable<any>) {
+    console.error('An error occured:', error);
+    return throwError(() => new Error('test'));
   }
 
-  createLocation(location:Location):Observable<any>{
+  createLocation(location: Location): Observable<any> {
     return this.httpClient.post(this.baseUrl, location);
   }
 
@@ -42,11 +42,11 @@ return this.httpClient.get<Location[]>(this.baseUrl)
     //  http://localhost:3000/locations/id
   }
 
-  updateLocation(id:string, location:Location):Observable<any>{
-return this.httpClient.put(this.baseUrl+"/"+id, location);
+  updateLocation(id: string, location: Location): Observable<any> {
+    return this.httpClient.put(this.baseUrl + "/" + id, location);
   }
 
-  getById(id:string):Observable<any>{
-return this.httpClient.get(this.baseUrl+"/"+id);
+  getById(id: string): Observable<any> {
+    return this.httpClient.get(this.baseUrl + "/" + id);
   }
 }
