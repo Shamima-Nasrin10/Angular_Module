@@ -25,4 +25,8 @@ registration(user: UserModel):Observable<AuthResponse>{
   )
 }
 
+storeToken(token: string): void{
+  localStorage.setItem('token', token);
+}
+
 }

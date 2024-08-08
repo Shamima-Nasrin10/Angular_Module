@@ -11,6 +11,7 @@ import { UpdatelocationComponent } from './location/updatelocation/updatelocatio
 import { ViewstudentComponent } from './student/viewstudent/viewstudent.component';
 import { CreatestudentComponent } from './student/createstudent/createstudent.component';
 import { UpdatestudentComponent } from './student/updatestudent/updatestudent.component';
+import { RegistrationComponent } from './registration/registration.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { UpdatestudentComponent } from './student/updatestudent/updatestudent.co
     UpdatelocationComponent,
     ViewstudentComponent,
     CreatestudentComponent,
-    UpdatestudentComponent
+    UpdatestudentComponent,
+    RegistrationComponent
   ],
   imports: [
     BrowserModule,

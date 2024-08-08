@@ -1,11 +1,18 @@
 {
-
-  "user":[{
-    "id":1,
-    "name":"Muslima Begum",
-    "email":"muslima@gmail.com",
-    "password":"1234"
-  }],
+  "user": [
+    {
+      "id": "1",
+      "name": "Muslima Begum",
+      "email": "muslima@gmail.com",
+      "password": "1234"
+    },
+    {
+      "id": "7bae",
+      "name": "Shamima Nasrin",
+      "email": "shamima@gmail.com",
+      "password": "1234"
+    }
+  ],
   "locations": [
     {
       "id": "3",
