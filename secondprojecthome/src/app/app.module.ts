@@ -12,6 +12,11 @@ import { ViewstudentComponent } from './student/viewstudent/viewstudent.componen
 import { CreatestudentComponent } from './student/createstudent/createstudent.component';
 import { UpdatestudentComponent } from './student/updatestudent/updatestudent.component';
 import { RegistrationComponent } from './registration/registration.component';
+import { LoginComponent } from './login/login.component';
+import { LogoutComponent } from './logout/logout.component';
+import { HomeComponent } from './home/home.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { UserprofileComponent } from './userprofile/userprofile.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +27,12 @@ import { RegistrationComponent } from './registration/registration.component';
     ViewstudentComponent,
     CreatestudentComponent,
     UpdatestudentComponent,
-    RegistrationComponent
+    RegistrationComponent,
+    LoginComponent,
+    LogoutComponent,
+    HomeComponent,
+    NavbarComponent,
+    UserprofileComponent
   ],
   imports: [
     BrowserModule,
