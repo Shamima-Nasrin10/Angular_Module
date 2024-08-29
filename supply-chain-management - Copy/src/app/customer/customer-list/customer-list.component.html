@@ -1,0 +1,51 @@
+<div class="customer-list">
+  <h2>List of Customers</h2>
+  <div class="customer-cards">
+    <div class="customer-card" *ngFor="let customer of customers">
+      <img [src]="customer.photo" alt="{{ customer.name }}" class="customer-photo">
+      <div class="customer-info">
+        <h4>{{ customer.name }}</h4>
+        <div class="customer-actions">
+          <button (click)="viewCustomer(customer)" title="View" type="button" class="btn btn-link btn-primary btn-sm">
+            <i class="fa fa-eye"></i> View
+          </button>
+          <button (click)="selectCustomer(customer)" title="Edit" type="button" class="btn btn-link btn-primary btn-sm">
+            <i class="fa fa-edit"></i> Edit
+          </button>
+          <button (click)="deleteCustomer(customer)" title="Delete" type="button" class="btn btn-link btn-danger btn-sm">
+            <i class="fa fa-times"></i> Delete
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Customer details view -->
+  <div *ngIf="selectedCustomer && !isEditing" class="customer-details">
+    <h3>Details of {{ selectedCustomer.name }}</h3>
+    <p><strong>Name:</strong> {{ selectedCustomer.name }}</p>
+    <p><strong>Address:</strong> {{ selectedCustomer.address }}</p>
+    <p><strong>Email:</strong> {{ selectedCustomer.email }}</p>
+    <h4>Orders:</h4>
+    <ul>
+      <li *ngFor="let order of selectedCustomer.orders">
+        Order ID: {{ order.id }}, Quantity: {{ order.quantity }}, Status: {{ order.status }}
+      </li>
+    </ul>
+    <button (click)="cancel()" title="Close" type="button" class="btn btn-link btn-primary m-3"><i
+        class="fa fa-close"></i></button>
+  </div>
+
+  <!-- Edit customer form -->
+  <div *ngIf="isEditing" class="edit-form">
+    <h3>Edit Customer</h3>
+    <input [(ngModel)]="selectedCustomer!.name" placeholder="Customer Name">
+    <input [(ngModel)]="selectedCustomer!.address">
+    <input [(ngModel)]="selectedCustomer!.email" placeholder="Customer Email">
+    <input [(ngModel)]="selectedCustomer!.phone">
+    <!-- Add other input fields for editing customer details -->
+    <button (click)="saveCustomer(selectedCustomer!)" title="Save" type="button" class="btn btn-link btn-info m-3"><i
+        class="fa fa-save"></i></button>
+    <button (click)="cancel()">Cancel</button>
+  </div>
+</div>

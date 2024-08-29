@@ -1,0 +1,136 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "admin",
+      "email": "admin@example.com",
+      "password": "admin123",
+      "role": "admin"
+    },
+    {
+      "id": "2",
+      "name": "customer1",
+      "email": "customer1@example.com",
+      "password": "customer123",
+      "role": "customer"
+    },
+    {
+      "id": "fff9",
+      "name": "Shamima Nasrin",
+      "email": "nasrin05shamima@gmail.com",
+      "password": "1234"
+    }
+  ],
+  "rawMaterials": [
+    {
+      "id": "1",
+      "name": "Cotton",
+      "quantity": 1000,
+      "unit": "metre",
+      "supplier": {
+        "id": 1,
+        "name": "Supplier A",
+        "email": "email@supplierA.com",
+        "phone": "123456789"
+      },
+      "unitPrice": 105
+    },
+    {
+      "id": "eea5",
+      "supplier": {
+        "id": "3",
+        "name": "Supplier C",
+        "email": "email@supplierC.com",
+        "phone": "987654322"
+      },
+      "name": "Button",
+      "quantity": 500,
+      "unit": "Pcs",
+      "unitPrice": 5
+    }
+  ],
+  "suppliers": [
+    {
+      "id": "1",
+      "name": "Supplier A",
+      "email": "email@supplierA.com",
+      "phone": "123456789"
+    },
+    {
+      "id": "2",
+      "name": "Supplier B",
+      "email": "email@supplierB.com",
+      "phone": "987654321"
+    },
+    {
+      "id": "3",
+      "name": "Supplier C",
+      "email": "email@supplierC.com",
+      "phone": "987654322"
+    }
+  ],
+  "orders": [
+    {
+      "id": "1",
+      "customer": {
+        "id": "b96d",
+        "name": "Shamima Nasrin",
+        "photo": "https://e7.pngegg.com/pngimages/694/639/png-clipart-computer-icons-user-profile-female-symbol-miscellaneous-purple.png",
+        "email": "customerA@gmail.com",
+        "phone": "98764534"
+      },
+      "product": {
+        "productId": "P001",
+        "name": "Shirt",
+        "description": "Cotton shirt",
+        "price": 29.99,
+        "stock": 100
+      },
+      "quantity": 5,
+      "orderDate": "2023-05-11T18:00:00Z",
+      "status": "Pending",
+      "currentStage": "Sewing"
+    },
+    {
+      "id": "8cf6",
+      "customer": {
+        "id": "2",
+        "name": "Shamima Nasrin",
+        "photo": "https://e7.pngegg.com/pngimages/694/639/png-clipart-computer-icons-user-profile-female-symbol-miscellaneous-purple.png",
+        "email": "customerA@gmail.com",
+        "phone": "98764555"
+      },
+      "product": "2",
+      "quantity": "200",
+      "orderDate": "2024-08-28",
+      "status": "Approved"
+    },
+    {
+      "id": "8823"
+    }
+  ],
+  "notifications": [],
+  "customers": [
+    {
+      "id": "b96d",
+      "name": "Shamima Nasrin",
+      "photo": "https://e7.pngegg.com/pngimages/694/639/png-clipart-computer-icons-user-profile-female-symbol-miscellaneous-purple.png",
+      "email": "customerA@gmail.com",
+      "phone": "98764534"
+    },
+    {
+      "id": "2",
+      "name": "Shamima Nasrin",
+      "photo": "https://e7.pngegg.com/pngimages/694/639/png-clipart-computer-icons-user-profile-female-symbol-miscellaneous-purple.png",
+      "email": "customerA@gmail.com",
+      "phone": "98764555"
+    },
+    {
+      "id": "3",
+      "name": "Shamima Nasrin",
+      "photo": "https://e7.pngegg.com/pngimages/694/639/png-clipart-computer-icons-user-profile-female-symbol-miscellaneous-purple.png",
+      "email": "customerA@gmail.com",
+      "phone": "98764555"
+    }
+  ]
+}
